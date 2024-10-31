@@ -1,0 +1,8 @@
+git commit -m "
+prefixSum/2559.cpp
+연속적인 k일의 온도의 합이 최대가 되는 값을 구하는 문제
+피드백 : 간단하게 브루트포스로는 시간복잡도가 O(nk) 누적합으로는 O(n)이므로 누적합을 적용했다.
+algorithm 헤더의 max 함수를, climits 헤더의 INT_MIN 정수의 최솟값을 사용했다.
+변수명을 지을 때 of가 사용되면 앞뒤를 바꿔 num of days를 dayNum 으로, 다른 변수명들도 같은 규칙으로 변수들에 적용했다.
+days같은 s복수형은 array, list 등에 사용되므로 사용하지 않는다.
+"
