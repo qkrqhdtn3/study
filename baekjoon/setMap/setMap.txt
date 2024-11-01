@@ -1,0 +1,19 @@
+  set과 map의 개념
+set과 map은 비슷하다. set은 특정 key를 빠르게 검색할 수 있고, map은 특정 key를 빠르게 검색하고 key와 관련된 값들을 함께 관리 할 수 있다.
+  map 개념
+map은 인덱스로 int가 아닌 자료형을 사용할 수 있는 각 노드가 key와 value 쌍으로 이루어진 트리이다.
+key를 기준으로 정렬된 균형 이진 트리 중 레드 블랙 트리이다. <map> 헤더를 사용하고, map은 unique key이다. 같은 key 값을 갖는 노드를 추가하면 value값이 덮어씌워진다.
+map은 요소에 접근할 때 iterator과 key 두 가지 방법을 사용해 접근할 수 있다.
+  map 메서드
+size, empty, begin, end, (map[key]=value, m.insert(make_pair(key,value)), erase(key), find(key), count(key) 멤버 메서드 들이 있다.
+find(key)는 key인 노드가 존재하지 않으면 map의 마지막 원소를 가리키는 iterator를 return한다.
+insert, erase 메서드는 iterator를 인수로 사용할 수 있다. insert는 vector의 다수의 노드를 추가할 수 있다.(map.insert(vector.begin(), vetor.end()) erase는 가리키는 값을 지운다.
+  set 개념
+set은 value가 없는 map이라고 생각할 수 있다.
+<set> 헤더를 사용하고 map의 사용법과 매우 유사하다.
+  set 메서드
+size, empty, begin, end, insert(key), erase(key), find(key), count(key) 멤버 메서드들이 있다.
+
+참고자료
+(setMap의 method, 개념)
+https://sarah950716.tistory.com/6

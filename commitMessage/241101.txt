@@ -1,0 +1,33 @@
+git commit -m "
+28278.cpp
+문제에서 요구하는 명령 5가지 중에서 명령마다 stack 헤더의 push, pop, top, empty, size 메서드를 적절하게 사용하는 문제다.
+피드백 : 간단하게 스택의 메서드를 적용하는 문제다. 스택은 LIFO, c++의 stack.pop()의 return은 void형이다. 잊지 않고 줄바꿈을 해야한다.
+
+7785.cpp
+입력을 map으로 받고, map의 value가 "enter"이면 key를 내림차순으로 출력하면 되는 문제
+피드백 :
+  set과 map의 개념
+set과 map은 비슷하다. set은 특정 key를 빠르게 검색할 수 있고, map은 특정 key를 빠르게 검색하고 key와 관련된 값들을 함께 관리 할 수 있다.
+  map 개념
+map은 인덱스로 int가 아닌 자료형을 사용할 수 있는 각 노드가 key와 value 쌍으로 이루어진 트리이다.
+key를 기준으로 정렬된 균형 이진 트리 중 레드 블랙 트리이다. <map> 헤더를 사용하고, map은 unique key이다. 같은 key 값을 갖는 노드를 추가하면 value값이 덮어씌워진다.
+map은 요소에 접근할 때 iterator과 key 두 가지 방법을 사용해 접근할 수 있다.
+  map 메서드
+size, empty, begin, end, (map[key]=value, m.insert(make_pair(key,value)), erase(key), find(key), count(key) 멤버 메서드 들이 있다.
+find(key)는 key인 노드가 존재하지 않으면 map의 마지막 원소를 가리키는 iterator를 return한다.
+insert, erase 메서드는 iterator를 인수로 사용할 수 있다. insert는 vector의 다수의 노드를 추가할 수 있다.(map.insert(vector.begin(), vetor.end()) erase는 가리키는 값을 지운다.
+  set 개념
+set은 value가 없는 map이라고 생각할 수 있다.
+<set> 헤더를 사용하고 map의 사용법과 매우 유사하다.
+  set 메서드
+size, empty, begin, end, insert(key), erase(key), find(key), count(key) 멤버 메서드들이 있다.
+
+map 자료형의 세번째 인자부분의 Compare 초기값은 less<>이고 내림차순이다. greater<>구조체를 넣으면 오름차순으로 정렬된다.
+c++에서 string의 ==, comapre()의 차이는 없다. 보편적으로 == 연산자가 직관적이다.
+참조 https://stackoverflow.com/questions/9158894/differences-between-c-string-and-compare
+
+오류 해결 : for문 초기식에 it-1을 사용했는데, std::map::iterator는 LegacyBidirectionalIterator이고 이 it의 표현식에는 산술연산자 - 가 없고 증감연산자 -- 는 존재한다. 따라서 it - 1은 불가능하고 --it를 사용해야 한다.
+참조
+https://devdocs.programmers.co.kr/cpp/container/map
+https://devdocs.programmers.co.kr/cpp/named_req/bidirectionaliterator
+"
