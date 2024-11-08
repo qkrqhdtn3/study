@@ -1,0 +1,4 @@
+recursion/25501.cpp
+const char*, string의 차이
+함수의 인수로 사용될 때 const char*은 포인터 주소(8byte)만 주고, string은 스트링 전체값(문자열의 길이)를 준다. 따라서 실행 속도 차이가 난다. 
+c++에서 strlen()은 cstring 필요
