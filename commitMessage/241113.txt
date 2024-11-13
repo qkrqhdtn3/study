@@ -6,7 +6,7 @@ map.size()를 하면 서로 다른 부분 문자열의 개수를 구할 수 있�
 부분문자열을 구하는 방법은 substr(pos, count)로 [pos ~ pos+count] 형식의 문자열로 구했고, 
 str += s[i] 형식으로도 구할 수 있을 것 같다.
 
-stack/9935.cpp
+stack/9935.cpp (미해결)
 https://www.acmicpc.net/problem/9935
   문제 해결방법
 입력 문자열 두개를 s, delStr에 초기화하고,
