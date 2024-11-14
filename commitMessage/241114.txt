@@ -1,0 +1,13 @@
+stack/9935.cpp solved
+https://www.acmicpc.net/problem/9935
+  문제 해결방법
+입력 문자열 두개를 s, delStr에 초기화한다.
+delStr[delStrLen - 1]~delStr[0] char값과 stack에서 delStrLen개의 pop한 char값을 비교한다.
+문자가 하나라도 다르다면 flag인 isDiff는 true가 되고 break한다.
+문자가 모두 같아 반복문에서 한번도 break하지 않으면 isDiff는 false다.
+if(isDiff)를 사용해 문자가 하나라도 다르다면 cStack.push(s[i]) 직후의 상태로 만들고 cTmpStack을 비운다.
+else if(!isDiff)를 사용해 문자가 모두 같다면 cStack에서 모두 제외된 상태로 cTmpStack을 비운다.
+survivingString += cStack.top() 해서 문자열을 만들고 reverse(surStr.begin(), surStr.end())해서 출력하면 된다.
+  피드백
+어제 배열로 풀다가 stack 형식이 더 좋은 방법이어서 오늘은 stack으로 풀었다.
+어제 배열로 풀던 것이 남아있어서 그 풀이법을 좀 더 고민해보려고 한다.
