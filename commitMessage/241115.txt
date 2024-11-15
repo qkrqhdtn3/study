@@ -1,0 +1,16 @@
+stack/17299.cpp
+https://www.acmicpc.net/problem/17299
+  문제 해결 메인 아이디어
+for(i = 0 ; i < n)반복문에 stack인 st에는 index가 push된다.
+while 반복문의 조건으로 aCntVec 두개를 비교할 때 현재 index보다 stack에 들어있는 index의 값이 작은지 비교한다.
+현재 index를 기준으로 st.top()의 값인 인덱스를 비교하게 되고, ngfVec은 ngf의 의미에 맞는 큰 수를 저장해야한다.
+ngfVec에는 현재 index에 해당하는 aVec 값 넣기를 반복하고, ngfVec은 st.top()를 인덱스로 갖는 부분에 대입하기를 반복하게 된다.
+위를 코드로 풀이하면 ngfVec[st.top()] = aVec[i]이고, st.pop()한다.
+밑의 예시와 위의 설명에 해당하는 메인에 코드를 함께 보면 실행 구조를 이해하기 쉽다.
+예시
+aVec =     [1, 1, 2, 3, 4, 2, 1]
+aCntVec = [3, 3, 2, 1, 1, 2, 3]
+ngfVec =   [-1, -1, 1, 2, 2, 1, -1]
+  피드백
+메인 아이디어를 생각하기 쉽지 않았다.
+aVec을 입력받으며 aCntVec(=fVec)을 만든다.
