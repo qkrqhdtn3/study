@@ -1,0 +1,17 @@
+stack/1725.cpp
+https://www.acmicpc.net/problem/1725
+  문제 풀이 아이디어
+height[i]가 height[st.top()]보다 크거나 같은 경우 st.push(i)만 하고,
+height[i]가 height[st.top()]보다 작은 경우 
+직사각형의 면적을 구하며 st.pop()을 반복한다.
+직사각형의 height는 st.top()으로 구할 수 있고 
+직사각형의 widths는 st.pop()를 한번한 후 st.top()으로 구할 수 있다.
+직사각형의 최대값은 반복문을 반복하며 비교해서 구할 수 있다.
+  틀렸던 부분
+curHeightIndex, curWidthIndex를 잘 구해야 한다.
+curArea = heightArr[curIndex] * (i - curIndex); 으로 풀었는데
+예를 들어 height가 2 1 2 같은 경우, 높이가 1인 직사각형을 잘못 구하게 된다.
+따라서 curArea = heightArr[curHeightIndex] * (i - curWidthIndex); 형식으로 구해야 한다.
+결과적으로 curIndex에서 현재 구하는 높이와 width를 구하는 것이 아니고,
+현재 구하는 면적의 높이를 st.top()의 index로 구했다면 ( = heightArr[st.top()] ),
+너비는 st.pop() 후에 st.top()의 index로 구해야 한다.
