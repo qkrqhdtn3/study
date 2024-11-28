@@ -1,0 +1,9 @@
+implementation/10988.cpp
+https://www.acmicpc.net/problem/10988
+팰린드롬 문자열인지 확인하는 문제다.
+문자열을 앞에서 부터 인덱스를 하나씩 증가시키고
+뒤에서 부터 인덱스를 하나씩 감소시키며 문자를 비교하고
+문자열의 중간까지 비교했을때 같으면 팰린드롬 문자열이고,
+중간에 다른 문자가 하나 있다면 팰린드롬 문자열이 아니므로 
+isPalindrome을 false로 하고break한다.
+마지막으로 isPalindrome을 출력하면 된다.
