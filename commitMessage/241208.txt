@@ -1,0 +1,7 @@
+unsolved/1504.cpp unsolved
+https://www.acmicpc.net/problem/1504
+------
+  문제 해결 아이디어
+------
+  피드백
+다익스트라 알고리즘을 사용했다.
