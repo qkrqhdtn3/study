@@ -1,0 +1,1 @@
+#include <iostream>#include <cstring>#include <algorithm>using namespace std;int main(){    ios::sync_with_stdio(0);    cin.tie(0);    cout.tie(0);    int t;    int n;    cin >> t;    for(int i = 0 ; i < t ; i++){        cin >> n;        cout << n - 1 << "\n";    }    return 0;}
