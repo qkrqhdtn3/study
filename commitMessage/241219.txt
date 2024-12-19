@@ -1,0 +1,16 @@
+codeforce/contests/upsolving 991div3
+------
+upsolving 991div3
+https://codeforces.com/contest/2050
+------
+upsolving 991div3
+  B.cpp
+아이디어
+1. i를 고르고 작업을 할 때, odd, even의 요소는 항상 서로 독립되어 변경된다.
+2. odd, even을 나눴을 때, odSum, evSum 은 각각 작업을 해도 변하지 않는다.
+3. odSum / odCnt, evSum / evCnt 가 나눠 떨어질 때 그 몫인 값으로 요소를 전부 같게 만들 수 있다.
+4. 따라서 밑을 만족시키면 YES이다.
+        if(odSum % odCnt == 0 &&
+           evSum % evCnt == 0 &&
+           odSum / odCnt == evSum / evCnt)
+위의 내용으로 풀이하면 충분하다.
