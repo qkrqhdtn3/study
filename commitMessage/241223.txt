@@ -1,0 +1,9 @@
+codeforce/contests/div3 995
+------
+codeforce/contests/div3 995
+https://codeforces.com/contest/2051
+------
+  피드백
+D가 복잡하게 구현이 됬다.
+C도 딱 깔끔하게는 풀지 못했다.
+다른 사람의 풀이를 보며 문제를 복기해야겠다.
