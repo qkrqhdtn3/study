@@ -1,0 +1,18 @@
+codeforces/contests/div4 993
+------
+codeforces/contests/div4 993
+https://codeforces.com/contest/2044
+------
+codeforces/contests/div4 993
+  C2.cpp
+
+
+  D2.cpp
+입력받은 a 배열로 조건을 만족하는 b 배열을 만들어야 한다.
+
+  조건
+1. mode는 여러 숫자가 같은 개수이면 그 모두가 mode가 될 수 있다.
+
+  아이디어
+1번 조건에 따라 b[i] = a[i]를 먼저 한 후,
+visited 배열을 이용해 b[i]에 없는 수들을 하나씩 채워주면 된다.
