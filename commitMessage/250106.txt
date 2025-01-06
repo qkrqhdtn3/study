@@ -1,0 +1,7 @@
+codeforces/contests/div2 992
+------
+codeforces/contests/div2 992
+https://codeforces.com/contest/2040
+------
+codeforces/contests/div2 992
+C.cpp
