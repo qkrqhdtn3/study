@@ -1,0 +1,10 @@
+codeforces/contests/div3 988
+------
+codeforces/contests/div3 988
+https://codeforces.com/contest/2047
+------
+codeforces/contests/div3 988
+A.cpp
+  조건
+i와 j를 선택했다면 건너 뛰어야하고,
+ai = aj인 개수가 몇개인지 구해야 한다.
