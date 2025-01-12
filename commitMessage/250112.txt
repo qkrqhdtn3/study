@@ -1,0 +1,30 @@
+codeforces/contests/div2 990
+------
+codeforces/contests/div2 990
+https://codeforces.com/contest/2047
+------
+codeforces/contests/div2 990
+B.cpp
+B2.cpp
+  아이디어
+길이 n인 문자열 s의 두 char을 골라서 바꾸고,
+그 문자열의 중복되지 않는 순열의 개수가 최소가 되도록 하는 문제다.
+문제를 풀 때 밑의 작업을 한 번만 해야된다.
+  작업 조건
+i, j 인덱스를 고른다. 1<= i, j <= n 이고, i = j여도 된다.
+s[i] = s[j] 할당한다.
+
+우선 푸는 방법은 다양하다.
+각각 알파벳의 개수를 구하는 부분은 다음과 같다. alp[s[i] - 'a']++ 
+위와 min(), max() 함수를 활용해 가장 적은 개수 알파벳, 가장 많은 개수 알파벳을 구할 수 있다.
+이후에
+가장 적은 개수의 알파벳 index 하나를
+가장 많은 개수의 알파벳을 할당해주면 된다.
+
+  엣지 케이스
+모든 char의 개수가 같을 때를 주의해야한다.
+다양한 조건을 붙여서 풀 수 있으나
+1. s[i] != s[j] 이도록 만들어 주거나,
+2. char 순서도 함께 정렬해준다.
+(ex. lowCnt == alp[s[i] - 'a'] && s[i] < lowChar)
+(ex. highCnt == alp[s[i] - 'a'] && s[i] > highChar)
