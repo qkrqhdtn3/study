@@ -1,0 +1,13 @@
+codeforces/contests/div1Div2 989
+------
+codeforces/contests/div1Div2 989
+https://codeforces.com/contest/2034
+------
+codeforces/contests/div1Div2 989
+B.cpp
+B2.cpp
+  아이디어
+문자열 s에는 '0', '1'이 존재한다.
+연속된 문자 k개를 1로 만드는 작업을 할 수 있다.
+연속된 0이 m개가 존재하지 않도록 해야 한다.
+연속된 0이 m개 이상 있다면 m - 1개 있도록 m개째에 작업을 해주면 된다.
