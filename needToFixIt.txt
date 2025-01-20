@@ -1,0 +1,2 @@
+codeforces/contests/div2 997 C.cpp -> codeforces/contests/div2 987 C.cpp
+codeforces/contests/div2 997 C2.cpp -> codeforces/contests/div2 997 C.cpp
