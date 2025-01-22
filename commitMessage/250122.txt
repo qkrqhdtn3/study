@@ -1,0 +1,15 @@
+codeforces/contests/div3/998
+------
+codeforces/contests/div3/998
+https://codeforces.com/contest/2060
+------
+codeforces/contests/div3/998
+B.cpp
+  아이디어
+n마리의 소가 있고, 0부터 n * m - 1의 숫자가 있는 n * m개의 카드가 있다.
+길이 n인 수열 p가 있을 때, p[i] 번째의 소가 i 번째로 카드를 가운데에 놓는다.
+이 때 카드의 숫자가 증가하는 순서대로 모든 카드를 놓을 수 있다면 그 수열 p를 구하고,
+불가능하다면 -1을 출력하면 된다.
+
+정렬해서 i + n * j의 규칙성을 가지고 있는지 확인하는 방법은 O(n*mlogm) 일 것 같고,
+i번째 소의 카드의 mod n 값이 모두 같은지 확인하는 방법으로 풀었다.
