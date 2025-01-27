@@ -1,0 +1,7 @@
+codeforces/contests/div3/984
+------
+codeforces/contests/div3/984
+https://codeforces.com/contest/2036
+------
+codeforces/contests/div3/984
+A.cpp
